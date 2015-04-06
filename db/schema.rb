@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150401221712) do
+ActiveRecord::Schema.define(version: 20150406133226) do
+
+  create_table "parks", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.text     "hashtag"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "photos", force: :cascade do |t|
     t.string   "filename"

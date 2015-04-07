@@ -1,6 +1,5 @@
-root to: 'parks#index'
-
 Rails.application.routes.draw do
+  root to: 'parks#index'  
   resources :parks
   resources :photos
 end

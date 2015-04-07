@@ -2,7 +2,6 @@
 <%= @park.description %><br>
 <p><strong>Hashtag: </strong>#<%= @park.hashtag %></p>
 <hr>
-
 <% @photos.each do |photo| %>
 <%= image_tag photo.images.thumbnail.url %>
 <% end %>

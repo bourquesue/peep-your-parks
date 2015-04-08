@@ -36,25 +36,25 @@
 
     <%= javascript_include_tag "application" %>
   </head>
-  <body>
+  <body style="background-color:#424251;">
 
-    <div class="navbar navbar-default navbar-static-top">
+    <div style="background-color: #428BCA; border-radius: 23px;"class="navbar navbar-default navbar-static-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/index">Peep Your Parks</a>
+        <a style="color: white;" class="navbar-brand" href="/"><span style="color: white; text-transform:uppercase;">Peep Your Parks</span> &nbsp; &nbsp; back</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
+           <!--  <li><%= link_to "Link1", "/path1"  %></li> -->
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div style="background-color: white; border: 1px solid; border-radius: 25px; padding-bottom:20px;" class="container">
       <div class="row">
         <div class="col-lg-9">
           <%= bootstrap_flash %>
@@ -63,6 +63,6 @@
       </div><!--/row-->
 
     </div> <!-- /container -->
-
+<footer style="color:whitesmoke; margin: 20px 0px 0px 40px;">Created by Sue Bourque</footer>
   </body>
 </html>

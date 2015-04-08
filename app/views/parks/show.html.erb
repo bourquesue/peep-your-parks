@@ -3,5 +3,5 @@
 <p style="color:#006400; font-size: 17px; text-transform:uppercase;"><strong>#<%= @park.hashtag %></strong></p>
 <hr>
 <% @photos.each do |photo| %>
-<%= image_tag photo.images.thumbnail.url %>
+<%= image_tag photo.images.low_resolution.url %>
 <% end %>
